@@ -1,0 +1,41 @@
+main {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  .login-container {
+    height: 80%;
+    width: 50%;
+    min-width: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h2 {
+      text-align: center;
+    }
+    form {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .form-group {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        input {
+          width: 80%;
+          max-width: 320px;
+          height: 40px;
+          margin-bottom: 12px;
+          padding: 0 6px;
+        }
+      }
+      button {
+        width: 80%;
+        max-width: 320px;
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+<main>
+  <div class="register-container">
+    <form
+      action=""
+      class="login-form"
+      [formGroup]="registerUser"
+      (ngSubmit)="register()"
+    >
+      <h2>Registrar usuario</h2>
+      <div class="form-group">
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Usuario"
+          formControlName="user"
+        />
+      </div>
+      <div class="form-group">
+        <input
+          type="text"
+          id="whatsapp"
+          name="whatsapp"
+          placeholder="WhatsApp"
+          formControlName="whatsapp"
+        />
+      </div>
+      <div class="form-group">
+        <input
+          type="date"
+          id="endDate"
+          name="endDate"
+          formControlName="endDate"
+        />
+      </div>
+      <button type="submit" class="btn btn-primary">Registrar</button>
+      <button type="button" class="btn btn-outline-primary">Atras</button>
+    </form>
+  </div>
+</main>
