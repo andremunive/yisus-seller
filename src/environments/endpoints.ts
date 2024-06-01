@@ -3,7 +3,7 @@ const authMethod = {
 };
 
 const usersMethod = {
-  register: 'clients',
+  clients: 'clients',
   getTrainers: 'trainers',
 };
 
