@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { environment } from 'src/environments/environment';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { Observable, of } from 'rxjs';
 import { Router } from '@angular/router';
 import { CookieStorageService } from './cookie-storage.service';
 import { UserAuthModel } from '../core/models/user-auth.model';
@@ -34,5 +34,11 @@ export class AuthService {
     this.cookiesStorageService.deleteCookie('user.jwt');
     this.cookiesStorageService.deleteCookie('user.user');
     this.router.navigate([`/`]);
+  }
+
+  getAuthToken() {
+    let token = '';
+    token = this.cookiesStorageService.getCookie('user.jwt');
+    return token.length > 0;
   }
 }

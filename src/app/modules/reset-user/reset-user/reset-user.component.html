@@ -1,0 +1,25 @@
+<main>
+  <div class="register-container">
+    <form
+      action=""
+      class="login-form"
+      [formGroup]="resetUser"
+      (ngSubmit)="reset()"
+    >
+      <h2>Resetear usuario</h2>
+      <div class="form-group">
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Usuario"
+          formControlName="user"
+        />
+      </div>
+      <button type="submit" class="btn btn-primary">Resetear</button>
+      <button type="button" class="btn btn-outline-primary" (click)="goBack()">
+        Atras
+      </button>
+    </form>
+  </div>
+</main>

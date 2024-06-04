@@ -12,4 +12,7 @@ export class HomeComponent {
   registerUser() {
     this.router.navigate([`/register`]);
   }
+  resetUser() {
+    this.router.navigate([`/reset`]);
+  }
 }

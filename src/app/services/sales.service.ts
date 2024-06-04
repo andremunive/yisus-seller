@@ -21,4 +21,16 @@ export class SalesService {
       `${environment.URL_BASE}${environment.host.users.methods.clients}?filters[user][$eq]=${user}`
     );
   }
+
+  resetUser(id: string) {
+    const reset = {
+      data: {
+        unique_id: null,
+      },
+    };
+    return this.http.put(
+      `${environment.URL_BASE}${environment.host.users.methods.clients}/${id}`,
+      reset
+    );
+  }
 }
