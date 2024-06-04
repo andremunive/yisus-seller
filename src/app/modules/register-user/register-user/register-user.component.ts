@@ -43,7 +43,7 @@ export class RegisterUserComponent implements OnInit {
                 data: {
                   user: usuario,
                   whatsapp: this.registerUser.value['whatsapp'],
-                  endDate: this.registerUser.value['endDate'],
+                  end_date: this.registerUser.value['endDate'],
                   active: true,
                 },
               };
