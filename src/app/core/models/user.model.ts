@@ -1,6 +1,6 @@
 export interface UserModel {
-  user: string;
-  whatsapp: string;
+  user?: string;
+  whatsapp?: string;
   end_date: string;
   active: boolean;
 }

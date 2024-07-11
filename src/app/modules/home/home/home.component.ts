@@ -15,4 +15,8 @@ export class HomeComponent {
   resetUser() {
     this.router.navigate([`/reset`]);
   }
+
+  renewUser() {
+    this.router.navigate([`/renew`]);
+  }
 }

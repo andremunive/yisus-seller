@@ -16,6 +16,13 @@ export class SalesService {
     );
   }
 
+  renewUser(user: DataModel, id: string) {
+    return this.http.put(
+      environment.URL_BASE + environment.host.users.methods.clients + '/' + id,
+      user
+    );
+  }
+
   validateUser(user: string) {
     return this.http.get(
       `${environment.URL_BASE}${environment.host.users.methods.clients}?filters[user][$eq]=${user}`
